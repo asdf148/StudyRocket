@@ -4,5 +4,5 @@ mod controller;
 
 #[launch]
 fn rocket() -> _ {
-    rocket::build().mount("/", routes![controller::test_controller::index])
+    rocket::build().mount("/", routes![controller::test_controller::index, controller::test_controller::hello_name])
 }
